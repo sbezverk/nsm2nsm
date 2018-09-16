@@ -19,10 +19,10 @@ limitations under the License.
 package versioned
 
 import (
+	sbezverkv1 "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned/typed/sbezverk.io/v1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
-	sbezverkv1 "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned/typed/sbezverk.io/v1"
 )
 
 type Interface interface {

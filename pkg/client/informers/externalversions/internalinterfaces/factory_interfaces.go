@@ -20,8 +20,8 @@ package internalinterfaces
 
 import (
 	time "time"
-	versioned "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned"
 
+	versioned "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	cache "k8s.io/client-go/tools/cache"

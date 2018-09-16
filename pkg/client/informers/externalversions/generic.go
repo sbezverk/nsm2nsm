@@ -21,9 +21,9 @@ package externalversions
 import (
 	"fmt"
 
+	v1 "github.com/sbezverk/nsm2nsm/pkg/apis/sbezverk.io/v1"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
-	v1 "workspace/ligato/nsm2nsm/pkg/apis/sbezverk.io/v1"
 )
 
 // GenericInformer is type of SharedIndexInformer which will locate and delegate to other

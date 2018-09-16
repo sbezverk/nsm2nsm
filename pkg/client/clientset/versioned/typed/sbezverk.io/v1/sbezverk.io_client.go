@@ -19,11 +19,10 @@ limitations under the License.
 package v1
 
 import (
-	"workspace/ligato/nsm2nsm/pkg/client/clientset/versioned/scheme"
-
+	v1 "github.com/sbezverk/nsm2nsm/pkg/apis/sbezverk.io/v1"
+	"github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
-	v1 "workspace/ligato/nsm2nsm/pkg/apis/sbezverk.io/v1"
 )
 
 type SbezverkV1Interface interface {

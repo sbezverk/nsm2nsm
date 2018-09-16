@@ -1,4 +1,4 @@
-REGISTRY_NAME = 192.168.80.240:4000/ligato
+REGISTRY_NAME = docker.io/sbezverk
 IMAGE_VERSION = latest
 
 .PHONY: clean test

@@ -19,13 +19,12 @@ limitations under the License.
 package v1
 
 import (
-	scheme "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned/scheme"
-
+	v1 "github.com/sbezverk/nsm2nsm/pkg/apis/sbezverk.io/v1"
+	scheme "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned/scheme"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	v1 "workspace/ligato/nsm2nsm/pkg/apis/sbezverk.io/v1"
 )
 
 // ServerEndpointsGetter has a method to return a ServerEndpointInterface.

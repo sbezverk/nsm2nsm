@@ -19,9 +19,8 @@ limitations under the License.
 package sbezverk
 
 import (
-	internalinterfaces "workspace/ligato/nsm2nsm/pkg/client/informers/externalversions/internalinterfaces"
-
-	v1 "workspace/ligato/nsm2nsm/pkg/client/informers/externalversions/sbezverk.io/v1"
+	internalinterfaces "github.com/sbezverk/nsm2nsm/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/sbezverk/nsm2nsm/pkg/client/informers/externalversions/sbezverk.io/v1"
 )
 
 // Interface provides access to each of this group's versions.

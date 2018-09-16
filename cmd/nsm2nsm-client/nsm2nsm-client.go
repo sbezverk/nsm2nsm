@@ -8,8 +8,9 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
-	"workspace/ligato/nsm2nsm/pkg/apis/serverendpoints"
-	customresourceclient "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned"
+
+	"github.com/sbezverk/nsm2nsm/pkg/apis/serverendpoints"
+	customresourceclient "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned"
 
 	"github.com/golang/glog"
 	"golang.org/x/net/context"

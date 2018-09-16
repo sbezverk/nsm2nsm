@@ -19,15 +19,14 @@ limitations under the License.
 package fake
 
 import (
-	clientset "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned"
-
+	clientset "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned"
+	sbezverkv1 "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned/typed/sbezverk.io/v1"
+	fakesbezverkv1 "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned/typed/sbezverk.io/v1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"
 	fakediscovery "k8s.io/client-go/discovery/fake"
 	"k8s.io/client-go/testing"
-	sbezverkv1 "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned/typed/sbezverk.io/v1"
-	fakesbezverkv1 "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned/typed/sbezverk.io/v1/fake"
 )
 
 // NewSimpleClientset returns a clientset that will respond with the provided objects.

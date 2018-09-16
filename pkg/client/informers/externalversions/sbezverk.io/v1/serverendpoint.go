@@ -20,15 +20,15 @@ package v1
 
 import (
 	time "time"
-	versioned "workspace/ligato/nsm2nsm/pkg/client/clientset/versioned"
-	internalinterfaces "workspace/ligato/nsm2nsm/pkg/client/informers/externalversions/internalinterfaces"
 
+	sbezverkiov1 "github.com/sbezverk/nsm2nsm/pkg/apis/sbezverk.io/v1"
+	versioned "github.com/sbezverk/nsm2nsm/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/sbezverk/nsm2nsm/pkg/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/sbezverk/nsm2nsm/pkg/client/listers/sbezverk.io/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
-	sbezverkiov1 "workspace/ligato/nsm2nsm/pkg/apis/sbezverk.io/v1"
-	v1 "workspace/ligato/nsm2nsm/pkg/client/listers/sbezverk.io/v1"
 )
 
 // ServerEndpointInformer provides access to a shared informer and lister for

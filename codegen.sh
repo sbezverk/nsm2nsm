@@ -13,7 +13,7 @@ echo $CODEGEN_PKG
 
 echo "Calling ${CODEGEN_PKG}/generate-groups.sh"
 "${CODEGEN_PKG}"/generate-groups.sh all \
-  workspace/ligato/nsm2nsm/pkg/client workspace/ligato/nsm2nsm/pkg/apis \
+  github.com/sbezverk/nsm2nsm/pkg/client github.com/sbezverk/nsm2nsm/pkg/apis \
   sbezverk.io:v1
 
 echo "Generating other deepcopy funcs"
