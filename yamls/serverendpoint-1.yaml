@@ -1,0 +1,9 @@
+apiVersion: "sbezverk.io/v1"
+kind: ServerEndpoint
+metadata:
+  name: server-endpoint-1
+  namespace: "default"
+  labels:
+    nsm-network-service-name: pingServer
+spec:
+  serverAddress: "nsm2nsm-server-1:14141"

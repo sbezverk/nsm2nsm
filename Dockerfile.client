@@ -1,0 +1,7 @@
+FROM centos:latest
+
+RUN yum update -y \
+    && yum install -y net-tools bind-utils tcpdump
+
+COPY ./bin/nsm2nsm-client /nsm2nsm-client
+ENTRYPOINT ["/nsm2nsm-client"]

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package serverendpoints;
+
+message ServerPing {
+    string data = 1;
+}
+
+message ServerPong {
+    string data = 1;
+}
+
+service ServerPingPong {
+    rpc ServerPingPong (ServerPing) returns (ServerPong);
+}

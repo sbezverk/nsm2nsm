@@ -1,0 +1,33 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nsm2nsm-server-1
+  namespace: default
+spec:
+  selector:
+    app: nsm2nsm-server-1
+  ports:
+  - name: tcp-grpc
+    protocol: TCP
+    port: 14141
+    targetPort: 14141
+---
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+spec:
+  template:
+    metadata:
+      labels:
+        app: nsm2nsm-server-1
+    spec:
+      containers:
+        - name: nsm2nsm-server
+          image: 192.168.80.240:4000/ligato/nsm2nsm-server:latest
+          imagePullPolicy: Always
+          ports:
+            - name: tcp-grpc
+              protocol: TCP
+              containerPort: 14141              
+metadata:
+   name: nsm2nsm-server-1
+   namespace: default

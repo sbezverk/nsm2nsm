@@ -1,0 +1,25 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: serverendpoints.sbezverk.io
+spec:
+  group: sbezverk.io
+  versions:
+    - name: v1
+      served: true
+      storage: true
+  scope: Namespaced
+  names:
+    plural: serverendpoints
+    singular: serverendpoint
+    kind: ServerEndpoint
+    shortNames:
+    - srvep
+  validation:
+    openAPIV3Schema:
+      properties:
+        spec:
+          properties:
+            serverAddress:
+              type: string
+              pattern: '^*$'
